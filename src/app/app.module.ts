@@ -16,6 +16,9 @@ import { AuthenticationComponent } from './authentication/authentication.compone
 import { RegisterComponent } from './authentication/register/register.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,7 @@ import { FooterComponent } from './footer/footer.component';
     RegisterComponent,
     NavbarComponent,
     FooterComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,9 @@ import { FooterComponent } from './footer/footer.component';
     MatRadioModule,
     MatSidenavModule,
     RouterModule,
-    MatListModule
+    MatListModule,
+    MatExpansionModule,
+    CdkAccordionModule
   ],
 
   providers: [],
