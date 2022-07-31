@@ -8,11 +8,12 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(public router:Router) { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
   }
-  navigateToProjects(){
+
+  navigateToProjects() {
     this.router.navigate(['/projects']);
 
   }
