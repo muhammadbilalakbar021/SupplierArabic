@@ -133,3 +133,9 @@ img {
     padding-right1: 7px;
     margin-top: -3px;
 }
+
+@media (min-width:960px) {
+    .break_line {
+        word-break: break-all;
+    }
+}
