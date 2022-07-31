@@ -12,7 +12,12 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onNavigate(){
+
+  onNavigate() {
     this.router.navigate(['/register'])
+  }
+
+  onNavigateToHome() {
+    this.router.navigate(['home'])
   }
 }
