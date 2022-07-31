@@ -24,7 +24,6 @@ import { RegisterComponent } from './authentication/register/register.component'
     RegisterComponent,
   ],
   imports: [
-    RouterModule,
     BrowserModule,
     AppRoutingModule,
     MatCheckboxModule,
@@ -32,6 +31,7 @@ import { RegisterComponent } from './authentication/register/register.component'
     MatDialogModule,
     MatRadioModule,
     MatSidenavModule,
+    RouterModule,
     MatListModule
   ],
 
