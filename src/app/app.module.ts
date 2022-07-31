@@ -14,6 +14,8 @@ import { MatListModule } from '@angular/material/list';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { RegisterComponent } from './authentication/register/register.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { RegisterComponent } from './authentication/register/register.component'
     ProductDetailsComponent,
     AuthenticationComponent,
     RegisterComponent,
+    NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

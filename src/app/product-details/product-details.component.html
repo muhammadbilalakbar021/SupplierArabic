@@ -1,52 +1,224 @@
 <div class="container">
-  <div class="card">
-    <div class="container-fliud">
-      <div class="wrapper row">
-        <div class="preview col-md-6">
+    <div class="card">
+        <div class="container-fliud">
+            <div class="wrapper row">
+                <div class="preview col-md-6">
 
-          <div class="">
-            <img class="card-img-top"
-              src="https://images.macrumors.com/t/Jzr8kExNit0Q5AH1zt84vwG0KMU=/1600x900/smart/article-new/2019/02/MR-Future-Products-2020-2.png">
-            <h1 class="heading mt-3">Apple Macbook</h1>
-          </div>
+                    <div class="">
+                        <img class="card-img-top" src="https://images.macrumors.com/t/Jzr8kExNit0Q5AH1zt84vwG0KMU=/1600x900/smart/article-new/2019/02/MR-Future-Products-2020-2.png">
+                        <h1 class="heading mt-3">Apple Macbook</h1>
+                    </div>
+                </div>
+                <div class="details col-md-6">
+
+                    <p class="product-description card-text">Instead, the buyer persona is likely interested in all-natural remedies for the home, especially when it comes to allergies. In this case, the potential buyer would likely be interested in learning about these remedies in the product
+                        description. Rather than focus on the decorative features of the lamp, like most other product descriptions for lamps, The Salt Lady focuses on the features that would appeal to her buyer persona the most. As a business owner,
+                        you are understandably excited to share all of the qualities of your products. You want to show that your product has the best features and the most unique specs. The buyer, however, is not necessarily interested in the mundane
+                        features of the product. Instead, they want to know how it can benefit them.</p>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="exampleInputDate">Date</label>
+                        <input type="text" class="form-control" id="exampleInputDate" placeholder="Enter date">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="exampleInputQuantity">Quantity</label>
+                    <input type="number" class="form-control" id="exampleInputQuantity" placeholder="0">
+                </div>
+                <div class="col-md-4">
+                    <label for="exampleInputPrice">Price</label>
+                    <input type="number" class="form-control" id="exampleInputPrice" placeholder="Rs. 0000.00">
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-3">
+                <button type="button" class="btn btn-dark">Add Quotation</button>
+            </div>
         </div>
-        <div class="details col-md-6">
-
-          <p class="product-description card-text">Instead, the buyer persona is likely interested in all-natural
-            remedies for the
-            home, especially when it comes to allergies. In this case, the potential buyer would likely be interested in
-            learning about these remedies in the product description.
-
-            Rather than focus on the decorative features of the lamp, like most other product descriptions for lamps,
-            The Salt Lady focuses on the features that would appeal to her buyer persona the most. As a business owner,
-            you are understandably excited to share all of the qualities of your products. You want to show that your
-            product has the best features and the most unique specs.
-
-            The buyer, however, is not necessarily interested in the mundane features of the product. Instead, they want
-            to know how it can benefit them.</p>
-        </div>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-md-4">
-          <div class="form-group">
-            <label for="exampleInputDate">Date</label>
-            <input type="text" class="form-control" id="exampleInputDate" placeholder="Enter date">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <label for="exampleInputQuantity">Quantity</label>
-          <input type="number" class="form-control" id="exampleInputQuantity" placeholder="0">
-        </div>
-        <div class="col-md-4">
-          <label for="exampleInputPrice">Price</label>
-          <input type="number" class="form-control" id="exampleInputPrice" placeholder="Rs. 0000.00">
-        </div>
-      </div>
-
-      <div class="row justify-content-center mt-3">
-        <button type="button" class="btn btn-dark">Add Quotation</button>
-      </div>
     </div>
-  </div>
 </div>
+
+
+///
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+        <mat-list role="list" class="mt-5">
+            <mat-list-item role="listitem"><i class="fa fa-1x fa-home mr-1" aria-hidden="true"></i> Home
+            </mat-list-item>
+            <mat-list-item role="listitem"><i class="fa fa-1x fa-first-order mr-1" aria-hidden="true"></i> Order
+            </mat-list-item>
+            <mat-list-item role="listitem"><i class="fa fa-1x fa-tag mr-1" aria-hidden="true"></i> Bid Management</mat-list-item>
+            <mat-list-item role="listitem"><i class="fa fa-1x fa-bar-chart mr-2" aria-hidden="true"></i> Supplier Reports</mat-list-item>
+        </mat-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <div class="container-fluid mt-5 justify-content-center">
+            <div class="row">
+                <h1>Orders:</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;" routerLink="/product-details">
+                        <img class="card-img-top" src="https://images.macrumors.com/t/Jzr8kExNit0Q5AH1zt84vwG0KMU=/1600x900/smart/article-new/2019/02/MR-Future-Products-2020-2.png">
+                        <div class="card-body">
+                            <p class="card-text">Species</p>
+                            <h1>Apple Mac.</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;" routerLink="/product-details">
+                        <img class="card-img-top" src="https://images.macrumors.com/t/Jzr8kExNit0Q5AH1zt84vwG0KMU=/1600x900/smart/article-new/2019/02/MR-Future-Products-2020-2.png">
+                        <div class="card-body">
+                            <p class="card-text">Species</p>
+                            <h1>Apple Mac.</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;" routerLink="/product-details">
+                        <img class="card-img-top" src="https://images.macrumors.com/t/Jzr8kExNit0Q5AH1zt84vwG0KMU=/1600x900/smart/article-new/2019/02/MR-Future-Products-2020-2.png">
+                        <div class="card-body">
+                            <p class="card-text">Species</p>
+                            <h1>Apple Mac.</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://images.macrumors.com/t/Jzr8kExNit0Q5AH1zt84vwG0KMU=/1600x900/smart/article-new/2019/02/MR-Future-Products-2020-2.png">
+                        <div class="card-body">
+                            <p class="card-text">Species</p>
+                            <h1>Apple Mac.</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://images.macrumors.com/t/Jzr8kExNit0Q5AH1zt84vwG0KMU=/1600x900/smart/article-new/2019/02/MR-Future-Products-2020-2.png">
+                        <div class="card-body">
+                            <p class="card-text">Species</p>
+                            <h1>Apple Mac.</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://images.macrumors.com/t/Jzr8kExNit0Q5AH1zt84vwG0KMU=/1600x900/smart/article-new/2019/02/MR-Future-Products-2020-2.png">
+                        <div class="card-body">
+                            <p class="card-text">Species</p>
+                            <h1>Apple Mac.</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body p-4">
+
+                            <div class="row">
+
+                                <div class="col-lg-12">
+                                    <h5 class="mb-3"><a href="#!" class="text-body"><i
+                        class="fas fa-long-arrow-alt-left mr-2"></i>Back</a></h5>
+                                    <hr>
+
+                                    <div class="row mt-2">
+                                        <div class="col-md-4 offset-md-1">
+                                            <p>Orders</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>Name</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p>Species</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                    </div>
+                                    <div class="card mb-3 mt-2">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img src="https://images.macrumors.com/t/Jzr8kExNit0Q5AH1zt84vwG0KMU=/1600x900/smart/article-new/2019/02/MR-Future-Products-2020-2.png" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                                                    </div>
+                                                    <div class="ml-3 mt-3">
+                                                        <h2>Apple Macbook</h2>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3 mt-2">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img src="https://images.macrumors.com/t/Jzr8kExNit0Q5AH1zt84vwG0KMU=/1600x900/smart/article-new/2019/02/MR-Future-Products-2020-2.png" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                                                    </div>
+                                                    <div class="ml-3 mt-3">
+                                                        <h2>Apple Macbook</h2>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 mt-2">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img src="https://images.macrumors.com/t/Jzr8kExNit0Q5AH1zt84vwG0KMU=/1600x900/smart/article-new/2019/02/MR-Future-Products-2020-2.png" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                                                    </div>
+                                                    <div class="ml-3 mt-3">
+                                                        <h2>Apple Macbook</h2>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 mt-2">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <div>
+                                                        <img src="https://images.macrumors.com/t/Jzr8kExNit0Q5AH1zt84vwG0KMU=/1600x900/smart/article-new/2019/02/MR-Future-Products-2020-2.png" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                                                    </div>
+                                                    <div class="ml-3 mt-3">
+                                                        <h2>Apple Macbook</h2>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>
