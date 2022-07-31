@@ -11,14 +11,15 @@ import { MatRadioModule } from '@angular/material/radio';
 import { HomeComponent } from './home/home.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { RegisterComponent } from './authentication/register/register.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {CdkAccordionModule} from '@angular/cdk/accordion';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { ProductsComponent } from './products/products.component';
+import { FeaturedProductsComponent } from './products/featured-products/featured-products.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ProductsComponent } from './products/products.component';
     NavbarComponent,
     FooterComponent,
     ProductsComponent,
+    FeaturedProductsComponent,
   ],
   imports: [
     BrowserModule,
