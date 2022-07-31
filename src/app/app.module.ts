@@ -28,7 +28,6 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent,
   ],
   imports: [
-    RouterModule,
     BrowserModule,
     AppRoutingModule,
     MatCheckboxModule,
@@ -36,6 +35,7 @@ import { FooterComponent } from './footer/footer.component';
     MatDialogModule,
     MatRadioModule,
     MatSidenavModule,
+    RouterModule,
     MatListModule
   ],
 
