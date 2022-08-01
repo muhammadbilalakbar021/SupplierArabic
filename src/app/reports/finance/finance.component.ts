@@ -9,7 +9,13 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./finance.component.css'],
 })
 export class FinanceComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'name', 'progress', 'fruit'];
+  displayedColumns: string[] = [
+    'id',
+    'name',
+    'offer',
+    'reservation',
+    'recieved',
+  ];
   dataSource: MatTableDataSource<UserData>;
 
   @ViewChild(MatPaginator) paginator: MatPaginator | any;
@@ -50,47 +56,42 @@ function createNewUser(id: number): UserData {
   return {
     id: id.toString(),
     name: name,
-    progress: Math.round(Math.random() * 100).toString(),
-    fruit: FRUITS[Math.round(Math.random() * (FRUITS.length - 1))],
+    offer: Math.round(Math.random() * 100).toString(),
+    reservation: Math.round(Math.random() * 100).toString(),
+    recieved: Math.round(Math.random() * 100).toString(),
   };
 }
 
 export interface UserData {
   id: string;
   name: string;
-  progress: string;
-  fruit: string;
+  offer: string;
+  reservation: string;
+  recieved: string;
 }
 
 /** Constants used to fill up our data base. */
 const FRUITS: string[] = [
-  'blueberry',
-  'lychee',
-  'kiwi',
-  'mango',
-  'peach',
-  'lime',
-  'pomegranate',
-  'pineapple',
+  '123',
+  '456',
+  '3455',
+  '5677',
+  '45',
+  '345',
+  '5677',
+  '34556',
 ];
 const NAMES: string[] = [
-  'Maia',
-  'Asher',
-  'Olivia',
-  'Atticus',
-  'Amelia',
-  'Jack',
-  'Charlotte',
-  'Theodore',
-  'Isla',
-  'Oliver',
-  'Isabella',
-  'Jasper',
-  'Cora',
-  'Levi',
-  'Violet',
-  'Arthur',
-  'Mia',
-  'Thomas',
-  'Elizabeth',
+  'Bilal',
+  'Zain',
+  'Ali',
+  'Umer',
+  'Usama',
+  'Assad',
+  'Abdur Rehman',
+  'Fahad',
+  'Sajjad',
+  'Hanan',
+  'Saad',
+  'Usman',
 ];
