@@ -2,6 +2,8 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './authentication/login/login.component';
 import { RegisterComponent } from './authentication/register/register.component';
+import { BidManagementComponent } from './bid-management/bid-management.component';
+import { BidManagmentDetailsComponent } from './bid-management/bid-managment-details/bid-managment-details.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { ProductsComponent } from './products/products.component';
@@ -11,7 +13,9 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'home', component: HomeComponent },
   { path: 'projects', component: ProductsComponent },
-  { path: 'product-details', component: ProductDetailsComponent }
+  { path: 'product-details', component: ProductDetailsComponent },
+  { path: 'bid-management', component: BidManagementComponent },
+  { path: 'bid-details', component: BidManagmentDetailsComponent}
 ];
 
 @NgModule({

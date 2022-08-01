@@ -20,6 +20,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { ProductsComponent } from './products/products.component';
 import { FeaturedProductsComponent } from './products/featured-products/featured-products.component';
+import { BidManagementComponent } from './bid-management/bid-management.component';
+import { BidManagmentDetailsComponent } from './bid-management/bid-managment-details/bid-managment-details.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { FeaturedProductsComponent } from './products/featured-products/featured
     FooterComponent,
     ProductsComponent,
     FeaturedProductsComponent,
+    BidManagementComponent,
+    BidManagmentDetailsComponent,
   ],
   imports: [
     BrowserModule,
