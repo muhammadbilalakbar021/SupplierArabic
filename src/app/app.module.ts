@@ -27,6 +27,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { BidManagementComponent } from './bid-management/bid-management.component';
+import { BidManagmentDetailsComponent } from './bid-management/bid-managment-details/bid-managment-details.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +44,8 @@ import { MatInputModule } from '@angular/material/input';
     ReportsComponent,
     FinanceComponent,
     BalanceSheetComponent,
+    BidManagementComponent,
+    BidManagmentDetailsComponent,
   ],
   imports: [
     BrowserModule,
