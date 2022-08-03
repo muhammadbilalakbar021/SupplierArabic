@@ -7,6 +7,9 @@ import { BidManagmentDetailsComponent } from './bid-management/bid-managment-det
 import { HomeComponent } from './home/home.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { ProductsComponent } from './products/products.component';
+import { BalanceSheetComponent } from './reports/balance-sheet/balance-sheet.component';
+import { FinanceComponent } from './reports/finance/finance.component';
+import { ReportsComponent } from './reports/reports.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -14,12 +17,26 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'projects', component: ProductsComponent },
   { path: 'product-details', component: ProductDetailsComponent },
+  {
+    path: 'reports',
+    component: ReportsComponent,
+    children: [
+      {
+        path: 'finance',
+        component: FinanceComponent,
+      },
+      {
+        path: 'balances',
+        component: BalanceSheetComponent,
+      },
+    ],
+  },
   { path: 'bid-management', component: BidManagementComponent },
   { path: 'bid-details', component: BidManagmentDetailsComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

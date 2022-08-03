@@ -20,6 +20,13 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { ProductsComponent } from './products/products.component';
 import { FeaturedProductsComponent } from './products/featured-products/featured-products.component';
+import { ReportsComponent } from './reports/reports.component';
+import { FinanceComponent } from './reports/finance/finance.component';
+import { BalanceSheetComponent } from './reports/balance-sheet/balance-sheet.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { BidManagementComponent } from './bid-management/bid-management.component';
 import { BidManagmentDetailsComponent } from './bid-management/bid-managment-details/bid-managment-details.component';
 
@@ -34,6 +41,9 @@ import { BidManagmentDetailsComponent } from './bid-management/bid-managment-det
     FooterComponent,
     ProductsComponent,
     FeaturedProductsComponent,
+    ReportsComponent,
+    FinanceComponent,
+    BalanceSheetComponent,
     BidManagementComponent,
     BidManagmentDetailsComponent,
   ],
@@ -48,10 +58,14 @@ import { BidManagmentDetailsComponent } from './bid-management/bid-managment-det
     RouterModule,
     MatListModule,
     MatExpansionModule,
-    CdkAccordionModule
+    CdkAccordionModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
 
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
