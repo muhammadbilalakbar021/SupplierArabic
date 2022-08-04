@@ -29,6 +29,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BidManagementComponent } from './bid-management/bid-management.component';
 import { BidManagmentDetailsComponent } from './bid-management/bid-managment-details/bid-managment-details.component';
+import { AuthenticationGuard } from './authentication/authentication.guard';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,9 @@ import { BidManagmentDetailsComponent } from './bid-management/bid-managment-det
     MatInputModule,
   ],
 
-  providers: [],
+  providers: [AuthenticationGuard],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {}
+

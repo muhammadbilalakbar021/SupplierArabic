@@ -12,4 +12,11 @@ export class AuthenticationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isLoggedIn(){
+    if (sessionStorage.getItem("token")) {
+      return true
+    }
+    else return false
+  }
+
 }

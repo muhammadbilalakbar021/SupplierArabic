@@ -8,21 +8,21 @@
 }
 
 .carousel-item:nth-child(1) {
-    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+    background-image: url('src/assets/image/caraousel/image1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .carousel-item:nth-child(2) {
-    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+    background-image: url('src/assets/image/caraousel/image2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .carousel-item:nth-child(3) {
-    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+    background-image: url('src/assets/image/caraousel/image3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -64,7 +64,7 @@ body {
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 1260px;
+  width: 100%;
 }
 .slider::before, .slider::after {
   background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
@@ -72,7 +72,7 @@ body {
   height: 100px;
   position: absolute;
   width: 200px;
-  z-index: 2;
+  z-index: 0;
 }
 .slider::after {
   right: 0;
@@ -89,6 +89,6 @@ body {
   width: calc(250px * 14);
 }
 .slider .slide {
-  height: 100px;
-  width: 250px;
+  height: 200px;
+  width: 450px;
 }

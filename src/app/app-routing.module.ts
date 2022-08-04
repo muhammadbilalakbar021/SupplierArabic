@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthenticationGuard } from './authentication/authentication.guard';
 import { LoginComponent } from './authentication/login/login.component';
 import { RegisterComponent } from './authentication/register/register.component';
 import { BidManagementComponent } from './bid-management/bid-management.component';
@@ -12,13 +13,14 @@ import { FinanceComponent } from './reports/finance/finance.component';
 import { ReportsComponent } from './reports/reports.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'projects', component: ProductsComponent },
-  { path: 'product-details', component: ProductDetailsComponent },
+  { path: '', component: HomeComponent },
+  { path: 'projects', canActivate:[AuthenticationGuard], component: ProductsComponent },
+  { path: 'product-details',canActivate:[AuthenticationGuard], component: ProductDetailsComponent },
   {
     path: 'reports',
+    // canActivate:[AuthenticationGuard],
     component: ReportsComponent,
     children: [
       {
@@ -31,8 +33,8 @@ const routes: Routes = [
       },
     ],
   },
-  { path: 'bid-management', component: BidManagementComponent },
-  { path: 'bid-details', component: BidManagmentDetailsComponent}
+  { path: 'bid-management', canActivate:[AuthenticationGuard], component: BidManagementComponent },
+  { path: 'bid-details', canActivate:[AuthenticationGuard], component: BidManagmentDetailsComponent}
 ];
 
 @NgModule({
