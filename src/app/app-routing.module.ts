@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthenticationGuard } from './authentication/authentication.guard';
+import { ForgetPasswordComponent } from './authentication/forget-password/forget-password.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { RegisterComponent } from './authentication/register/register.component';
 import { BidManagementComponent } from './bid-management/bid-management.component';
@@ -15,6 +16,7 @@ import { ReportsComponent } from './reports/reports.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'forget-password', component: ForgetPasswordComponent },
   { path: '', component: HomeComponent },
   { path: 'projects', canActivate:[AuthenticationGuard], component: ProductsComponent },
   { path: 'product-details',canActivate:[AuthenticationGuard], component: ProductDetailsComponent },

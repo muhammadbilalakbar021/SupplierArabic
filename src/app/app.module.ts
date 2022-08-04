@@ -30,6 +30,7 @@ import { MatInputModule } from '@angular/material/input';
 import { BidManagementComponent } from './bid-management/bid-management.component';
 import { BidManagmentDetailsComponent } from './bid-management/bid-managment-details/bid-managment-details.component';
 import { AuthenticationGuard } from './authentication/authentication.guard';
+import { ForgetPasswordComponent } from './authentication/forget-password/forget-password.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { AuthenticationGuard } from './authentication/authentication.guard';
     BalanceSheetComponent,
     BidManagementComponent,
     BidManagmentDetailsComponent,
+    ForgetPasswordComponent,
   ],
   imports: [
     BrowserModule,

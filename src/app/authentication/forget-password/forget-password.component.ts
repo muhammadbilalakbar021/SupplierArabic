@@ -2,23 +2,24 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-forget-password',
+  templateUrl: './forget-password.component.html',
+  styleUrls: ['./forget-password.component.css']
 })
-export class LoginComponent implements OnInit {
+export class ForgetPasswordComponent implements OnInit {
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  
+  onNavigateToLogin() {
+    this.router.navigate(['/login'])
+  }
+  
   onNavigateToRegister() {
     this.router.navigate(['/register'])
-  }
-
-  onNavigateToForgetPasswordr() {
-    this.router.navigate(['/forget-password'])
   }
 
   onNavigateToHome() {
