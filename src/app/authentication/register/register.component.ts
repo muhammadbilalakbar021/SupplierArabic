@@ -14,10 +14,14 @@ export class RegisterComponent implements OnInit {
   }
 
   onNavigate() {
-    this.router.navigate([''])
+    this.router.navigate(['/login'])
   }
 
   onNavigateToHome() {
-    this.router.navigate(['home'])
+    this.router.navigate([''])
+  }
+
+  addToken(){
+    localStorage.setItem("login", "true")
   }
 }

@@ -12,10 +12,10 @@ export class AuthenticationGuard implements CanActivate, CanActivateChild, CanDe
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      // if(this.auth.isLoggedIn()){
-      //   return true;
-      // }
-      // this.router.navigate(['login']);
+      if(this.isLoggedIn()){
+        return true;
+      }
+      this.router.navigate(['login']);
       return true;
   }
   canActivateChild(
@@ -34,5 +34,9 @@ export class AuthenticationGuard implements CanActivate, CanActivateChild, CanDe
     route: Route,
     segments: UrlSegment[]): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     return true;
+  }
+
+  isLoggedIn(){
+    return localStorage.getItem("login") == "true" ? true : false
   }
 }
