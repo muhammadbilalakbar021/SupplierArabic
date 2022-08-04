@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-forget-password',
-  templateUrl: './forget-password.component.html',
-  styleUrls: ['./forget-password.component.css']
+  selector: 'app-phone-verification',
+  templateUrl: './phone-verification.component.html',
+  styleUrls: ['./phone-verification.component.css']
 })
-export class ForgetPasswordComponent implements OnInit {
+export class PhoneVerificationComponent implements OnInit {
 
   constructor(private router: Router) { }
 
@@ -22,11 +22,12 @@ export class ForgetPasswordComponent implements OnInit {
     this.router.navigate(['/register'])
   }
 
-  onNavigateToPhoneVerification() {
-    this.router.navigate(['/phone-verification'])
+  onNavigateToHome() {
+    this.router.navigate([''])
   }
 
   addToken(){
     localStorage.setItem("login", "true")
   }
+
 }

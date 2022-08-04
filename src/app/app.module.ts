@@ -31,6 +31,7 @@ import { BidManagementComponent } from './bid-management/bid-management.componen
 import { BidManagmentDetailsComponent } from './bid-management/bid-managment-details/bid-managment-details.component';
 import { AuthenticationGuard } from './authentication/authentication.guard';
 import { ForgetPasswordComponent } from './authentication/forget-password/forget-password.component';
+import { PhoneVerificationComponent } from './authentication/phone-verification/phone-verification.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { ForgetPasswordComponent } from './authentication/forget-password/forget
     BidManagementComponent,
     BidManagmentDetailsComponent,
     ForgetPasswordComponent,
+    PhoneVerificationComponent,
   ],
   imports: [
     BrowserModule,
