@@ -27,6 +27,6 @@ export class ForgetPasswordComponent implements OnInit {
   }
 
   addToken(){
-    localStorage.setItem("login", "true")
+    sessionStorage.setItem("login", "true")
   }
 }

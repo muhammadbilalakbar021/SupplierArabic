@@ -26,6 +26,6 @@ export class LoginComponent implements OnInit {
   }
 
   addToken(){
-    localStorage.setItem("login", "true")
+    sessionStorage.setItem("login", "true")
   }
 }

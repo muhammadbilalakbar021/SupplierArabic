@@ -37,6 +37,6 @@ export class AuthenticationGuard implements CanActivate, CanActivateChild, CanDe
   }
 
   isLoggedIn(){
-    return localStorage.getItem("login") == "true" ? true : false
+    return sessionStorage.getItem("login") == "true" ? true : false
   }
 }
