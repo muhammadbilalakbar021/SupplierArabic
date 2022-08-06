@@ -32,6 +32,8 @@ import { BidManagmentDetailsComponent } from './bid-management/bid-managment-det
 import { AuthenticationGuard } from './authentication/authentication.guard';
 import { ForgetPasswordComponent } from './authentication/forget-password/forget-password.component';
 import { PhoneVerificationComponent } from './authentication/phone-verification/phone-verification.component';
+import { LoginComponent } from './authentication/login/login.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,7 @@ import { PhoneVerificationComponent } from './authentication/phone-verification/
     BidManagmentDetailsComponent,
     ForgetPasswordComponent,
     PhoneVerificationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -68,11 +71,16 @@ import { PhoneVerificationComponent } from './authentication/phone-verification/
     MatPaginatorModule,
     MatFormFieldModule,
     MatInputModule,
+    MatIconModule
+  ],
+  exports: [
+    MatFormFieldModule,
+    MatInputModule,
   ],
 
   providers: [AuthenticationGuard],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule {}
+export class AppModule { }
 
