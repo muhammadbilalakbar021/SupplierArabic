@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'forget-password', component: ForgetPasswordComponent },
   { path: 'phone-verification', component: PhoneVerificationComponent },
   { path: '', component: HomeComponent },
-  { path: 'projects', canActivate:[AuthenticationGuard], component: ProductsComponent },
+  { path: 'products', canActivate:[AuthenticationGuard], component: ProductsComponent },
   { path: 'product-details',canActivate:[AuthenticationGuard], component: ProductDetailsComponent },
   {
     path: 'reports',

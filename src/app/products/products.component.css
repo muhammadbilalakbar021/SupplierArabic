@@ -734,7 +734,7 @@ h4 {
   }
 }
 
-[data-loader='spinner'] {
+/* [data-loader='spinner'] {
   width: 35px;
   height: 35px;
   display: inline-block;
@@ -743,7 +743,7 @@ h4 {
   background: url(../../assets/imgs/theme/favicon.svg);
   -webkit-box-shadow: 0 0 10px #fff;
           box-shadow: 0 0 10px #fff;
-}
+} */
 
 @-webkit-keyframes spinner {
   0% {
@@ -9866,7 +9866,7 @@ footer .hotline img {
 }
 
 .section-padding {
-  padding: 25px 0;
+  padding-top: 25px;
 }
 
 .ptb-0 {

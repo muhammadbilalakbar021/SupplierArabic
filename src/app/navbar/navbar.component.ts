@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {}
 
   navigateToProjects() {
-    this.router.navigate(['/projects']);
+    this.router.navigate(['/products']);
   }
 
   navigateToReports() {
