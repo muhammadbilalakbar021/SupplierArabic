@@ -1,0 +1,19 @@
+<div class="container slick">
+    <div class="section-title">
+        <div class="title">
+            
+        </div>
+        <div class="slider-arrow slider-arrow-2 flex-right carausel-8-columns-arrow mr-5 pr-30"
+            id="carausel-8-columns-arrows">
+            <a (click)="prev()"><i class="fa-solid fa-arrow-left mr-30 icon"></i></a>
+            <a (click)="next()"><i class="fa-solid fa-arrow-right icon"></i></a>
+        </div>
+    </div>
+    <ngx-slick-carousel style="background-color: White" class="carousel slick-list draggable"
+        #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+        (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide card-1 slick-slide">
+            <img class="img1" src="{{ slide.img }}" alt="">
+        </div>
+    </ngx-slick-carousel>
+</div>

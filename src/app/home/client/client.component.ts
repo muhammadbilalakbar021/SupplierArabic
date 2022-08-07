@@ -2,12 +2,12 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css', '../../utilities/ngx-slick.css',
-  ]
+  selector: 'app-client',
+  templateUrl: './client.component.html',
+  styleUrls: ['./client.component.css', '../../products/products.component.css']
 })
-export class ProductsComponent implements OnInit {
+export class ClientComponent implements OnInit {
+
   @ViewChild('slickModal', { static: true }) slickModal: SlickCarouselComponent | any;
   panelOpenState = false;
 
@@ -17,16 +17,16 @@ export class ProductsComponent implements OnInit {
   }
 
   slides = [
-    { img: 'assets/imgs/theme/icons/category-1.svg' },
-    { img: 'assets/imgs/theme/icons/category-2.svg' },
-    { img: 'assets/imgs/theme/icons/category-3.svg' },
-    { img: 'assets/imgs/theme/icons/category-4.svg' },
-    { img: 'assets/imgs/theme/icons/category-5.svg' },
-    { img: 'assets/imgs/theme/icons/category-6.svg' },
-    { img: 'assets/imgs/theme/icons/category-7.svg' },
-    { img: 'assets/imgs/theme/icons/category-8.svg' },
-    { img: 'assets/imgs/theme/icons/category-9.svg' },
-    { img: 'assets/imgs/theme/icons/category-11.svg' },
+    { img: 'https://i.ibb.co/y8R5qrp/brand-number-one-1.png' },
+    { img: 'https://i.ibb.co/3WgLMfR/brand-number-two-1.png' },
+    { img: 'https://i.ibb.co/Vp5Q57N/brand-number-three.png' },
+    { img: 'https://i.ibb.co/LYhVKBy/brand-number-four-1.png' },
+    { img: 'https://i.ibb.co/6gsyP1h/brand-number-five-1.png' },
+    { img: 'https://i.ibb.co/Yt15RLr/brand-number-six-1.png' },
+    { img: 'https://i.ibb.co/6WTZ118/brand-number-seven-1.png' },
+    { img: 'https://i.ibb.co/QPLgPL0/brand-number-eight.png' },
+    { img: 'https://i.ibb.co/FKj2H3X/svkcrypto-podcast-500x200.png' },
+    { img: 'https://i.ibb.co/wd7FSnZ/brand-number-ten-1.png' },
   ];
   slideConfig = {
     slidesToShow: 5, slidesToScroll: 2, arrows: true,
