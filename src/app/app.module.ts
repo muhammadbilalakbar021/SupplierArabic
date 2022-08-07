@@ -34,6 +34,7 @@ import { ForgetPasswordComponent } from './authentication/forget-password/forget
 import { PhoneVerificationComponent } from './authentication/phone-verification/phone-verification.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { MatIconModule } from '@angular/material/icon';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatPaginatorModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    SlickCarouselModule
   ],
   exports: [
     MatFormFieldModule,

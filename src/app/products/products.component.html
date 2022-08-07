@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
-<!--End header-->
+
 <main class="main">
-    <div class="container ">
+    <div class="container mb-4 ">
         <div class=" container row">
             <div class="col-lg-1-5 primary-sidebar sticky-sidebar pt-30 p-2">
                 <div class="sidebar-widget widget-category-2 mb-30">
@@ -4155,7 +4155,28 @@
 
         </div>
     </div>
-    <!--End category slider-->
+    <div class="container">
+        <div class="section-title">
+            <div class="title">
+                <h3>Shop by Categories</h3>
+                <a class="show-all" href="shop-grid-right.html">
+                    All Categories
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="slider-arrow slider-arrow-2 flex-right carausel-8-columns-arrow mr-5 pr-30" id="carausel-8-columns-arrows">
+                <a (click)="prev()"><i class="fa-solid fa-arrow-left mr-30 icon" ></i></a>
+                <a (click)="next()"><i class="fa-solid fa-arrow-right icon"></i></a>
+            </div>
+        </div>
+        <ngx-slick-carousel style="background-color: White" class="carousel slick-list draggable"
+            #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)"
+            (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide card-1 slick-slide" >
+                <img class="img1" src="{{ slide.img }}" alt="">
+            </div>
+        </ngx-slick-carousel>
+    </div>
     <section class="section-padding mb-30">
         <div class="container">
             <div class="row">
@@ -4489,8 +4510,8 @@
             </div>
         </div>
     </section>
-    <!--End 4 columns-->
 </main>
+
 <footer class="main">
     <section class="newsletter ">
         <div class="container">
@@ -4516,113 +4537,6 @@
         </div>
     </section>
 </footer>
-<!-- Preloader Start -->
-<section class="popular-categories section-padding">
-    <div class="container">
-        <div class="section-title">
-            <div class="title">
-                <h3>Shop by Categories</h3>
-                <a class="show-all" href="shop-grid-right.html">
-                    All Categories
-                    <i class="fi-rs-angle-right"></i>
-                </a>
-            </div>
-            <div class="slider-arrow slider-arrow-2 flex-right carausel-8-columns-arrow" id="carausel-8-columns-arrows"></div>
-        </div>
-        <div class="carausel-8-columns-cover position-relative">
-            <div class="carausel-8-columns" id="carausel-8-columns">
-                <div class="card-1">
-                    <figure class="img-hover-scale overflow-hidden">
-                        <a href="shop-grid-right.html"><img src="assets/imgs/theme/icons/category-1.svg" alt="" /></a>
-                    </figure>
-                    <h6>
-                        <a href="shop-grid-right.html">Milks and <br />Dairies</a>
-                    </h6>
-                </div>
-                <div class="card-1">
-                    <figure class="img-hover-scale overflow-hidden">
-                        <a href="shop-grid-right.html"><img src="assets/imgs/theme/icons/category-2.svg" alt="" /></a>
-                    </figure>
-                    <h6>
-                        <a href="shop-grid-right.html"
-                            >Wines & <br />
-                            Alcohol</a
-                        >
-                    </h6>
-                </div>
-                <div class="card-1">
-                    <figure class="img-hover-scale overflow-hidden">
-                        <a href="shop-grid-right.html"><img src="assets/imgs/theme/icons/category-3.svg" alt="" /></a>
-                    </figure>
-                    <h6>
-                        <a href="shop-grid-right.html">Clothing & <br />Beauty</a>
-                    </h6>
-                </div>
-                <div class="card-1">
-                    <figure class="img-hover-scale overflow-hidden">
-                        <a href="shop-grid-right.html"><img src="assets/imgs/theme/icons/category-4.svg" alt="" /></a>
-                    </figure>
-                    <h6>
-                        <a href="shop-grid-right.html">Pet Foods <br />& Toy</a>
-                    </h6>
-                </div>
-                <div class="card-1">
-                    <figure class="img-hover-scale overflow-hidden">
-                        <a href="shop-grid-right.html"><img src="assets/imgs/theme/icons/category-5.svg" alt="" /></a>
-                    </figure>
-                    <h6>
-                        <a href="shop-grid-right.html">Packaged <br />fast food</a>
-                    </h6>
-                </div>
-                <div class="card-1">
-                    <figure class="img-hover-scale overflow-hidden">
-                        <a href="shop-grid-right.html"><img src="assets/imgs/theme/icons/category-6.svg" alt="" /></a>
-                    </figure>
-                    <h6>
-                        <a href="shop-grid-right.html">Baking <br />material</a>
-                    </h6>
-                </div>
-                <div class="card-1">
-                    <figure class="img-hover-scale overflow-hidden">
-                        <a href="shop-grid-right.html"><img src="assets/imgs/theme/icons/category-7.svg" alt="" /></a>
-                    </figure>
-                    <h6>
-                        <a href="shop-grid-right.html">Vegetables <br />& tubers</a>
-                    </h6>
-                </div>
-                <div class="card-1">
-                    <figure class="img-hover-scale overflow-hidden">
-                        <a href="shop-grid-right.html"><img src="assets/imgs/theme/icons/category-8.svg" alt="" /></a>
-                    </figure>
-                    <h6>
-                        <a href="shop-grid-right.html">Fresh <br />Seafood</a>
-                    </h6>
-                </div>
-                <div class="card-1">
-                    <figure class="img-hover-scale overflow-hidden">
-                        <a href="shop-grid-right.html"><img src="assets/imgs/theme/icons/category-9.svg" alt="" /></a>
-                    </figure>
-                    <h6>
-                        <a href="shop-grid-right.html">Noodles <br />Rice</a>
-                    </h6>
-                </div>
-                <div class="card-1">
-                    <figure class="img-hover-scale overflow-hidden">
-                        <a href="shop-grid-right.html"><img src="assets/imgs/theme/icons/category-10.svg" alt="" /></a>
-                    </figure>
-                    <h6><a href="shop-grid-right.html">Fastfood</a></h6>
-                </div>
-                <div class="card-1">
-                    <figure class="img-hover-scale overflow-hidden">
-                        <a href="shop-grid-right.html"><img src="assets/imgs/theme/icons/category-11.svg" alt="" /></a>
-                    </figure>
-                    <h6><a href="shop-grid-right.html">Ice cream</a></h6>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!--Footer-->
 <app-footer></app-footer>
 <!--Footer-->
