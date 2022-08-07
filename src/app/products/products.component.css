@@ -37,6 +37,17 @@ body .slick-next {
   cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+  .slick {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
 /* This line can be removed it was just for display on CodePen: */
 .slider-labels {
   margin-top: 10px;
