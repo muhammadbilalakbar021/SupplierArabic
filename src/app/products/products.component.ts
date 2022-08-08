@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
@@ -15,7 +16,7 @@ export class ProductsComponent implements OnInit {
   @ViewChild('slickModal', { static: true }) slickModal: SlickCarouselComponent | any;
   panelOpenState = false;
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
   }
@@ -68,5 +69,8 @@ export class ProductsComponent implements OnInit {
   prev() {
     this.slickModal.slickPrev();
   }
-
+  
+  navigateToProductDetail() {
+    this.router.navigate(['product-details']);
+  }
 }

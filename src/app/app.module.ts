@@ -36,6 +36,7 @@ import { LoginComponent } from './authentication/login/login.component';
 import { MatIconModule } from '@angular/material/icon';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ClientComponent } from './home/client/client.component';
+import { EmailComponent } from './shared/email/email.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { ClientComponent } from './home/client/client.component';
     ForgetPasswordComponent,
     PhoneVerificationComponent,
     LoginComponent,
-    ClientComponent
+    ClientComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,
