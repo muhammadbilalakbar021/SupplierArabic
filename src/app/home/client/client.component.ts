@@ -4,7 +4,8 @@ import { SlickCarouselComponent } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-client',
   templateUrl: './client.component.html',
-  styleUrls: ['./client.component.css', '../../products/products.component.css']
+  styleUrls: ['./client.component.css', '../../../assets/css/nest/main.css',
+  ]
 })
 export class ClientComponent implements OnInit {
 

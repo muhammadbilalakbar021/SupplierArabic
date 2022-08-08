@@ -4,7 +4,11 @@ import { SlickCarouselComponent } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css', '../../utilities/ngx-slick.css',
+  styleUrls: [
+    './products.component.css',
+    '../../assets/css/nest/plugins/slider-range.css',
+    '../../assets/css/nest/main.css',
+    '../../utilities/ngx-slick.css',
   ]
 })
 export class ProductsComponent implements OnInit {
@@ -17,16 +21,16 @@ export class ProductsComponent implements OnInit {
   }
 
   slides = [
-    { img: 'assets/imgs/theme/icons/category-1.svg' },
-    { img: 'assets/imgs/theme/icons/category-2.svg' },
-    { img: 'assets/imgs/theme/icons/category-3.svg' },
-    { img: 'assets/imgs/theme/icons/category-4.svg' },
-    { img: 'assets/imgs/theme/icons/category-5.svg' },
-    { img: 'assets/imgs/theme/icons/category-6.svg' },
-    { img: 'assets/imgs/theme/icons/category-7.svg' },
-    { img: 'assets/imgs/theme/icons/category-8.svg' },
-    { img: 'assets/imgs/theme/icons/category-9.svg' },
-    { img: 'assets/imgs/theme/icons/category-11.svg' },
+    { img: 'assets/images/nest/theme/icons/category-1.svg' },
+    { img: 'assets/images/nest/theme/icons/category-2.svg' },
+    { img: 'assets/images/nest/theme/icons/category-3.svg' },
+    { img: 'assets/images/nest/theme/icons/category-4.svg' },
+    { img: 'assets/images/nest/theme/icons/category-5.svg' },
+    { img: 'assets/images/nest/theme/icons/category-6.svg' },
+    { img: 'assets/images/nest/theme/icons/category-7.svg' },
+    { img: 'assets/images/nest/theme/icons/category-8.svg' },
+    { img: 'assets/images/nest/theme/icons/category-9.svg' },
+    { img: 'assets/images/nest/theme/icons/category-11.svg' },
   ];
   slideConfig = {
     slidesToShow: 5, slidesToScroll: 2, arrows: true,

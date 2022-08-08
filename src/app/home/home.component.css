@@ -8,21 +8,21 @@
 }
 
 .carousel-item:nth-child(1) {
-    background-image: url('src/assets/image/caraousel/image1.jpg');
+    background-image: url('src/assets/images/home/caraousel/image1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .carousel-item:nth-child(2) {
-    background-image: url('src/assets/image/caraousel/image2.jpg');
+    background-image: url('src/assets/images/home/caraousel/image2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .carousel-item:nth-child(3) {
-    background-image: url('src/assets/image/caraousel/image3.jpg');
+    background-image: url('src/assets/images/home/caraousel/image3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
