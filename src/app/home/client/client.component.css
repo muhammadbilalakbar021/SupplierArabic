@@ -1,0 +1,50 @@
+/*COMPONENTS -> CARD*/
+.card {
+    position: relative;
+    background: #F4F6FA;
+    text-align: center;
+    border: 1px solid #F4F6FA;
+    border-radius: 10px;
+    /* padding: 40px 30px 28px 30px; */
+    /* margin-bottom: 20px; */
+    /* min-height: 215px; */
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.card:hover {
+    background: #fff;
+    border: 1px solid #BCE3C9;
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.card figure {
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+.card figure img {
+    border-radius: 10px;
+    display: inline-block;
+    /* max-width: 80px; */
+}
+
+.card h6 {
+    /* margin: 0; */
+}
+
+.card h6 a {
+    color: #253D4E;
+}
+
+.card:hover a {
+    color: #3BB77E;
+}
+
+.card {
+    /* margin-right: 12px;
+    margin-left: 12px; */
+}
