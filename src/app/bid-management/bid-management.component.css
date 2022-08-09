@@ -2528,6 +2528,7 @@ Content Area-1 L-11-2
   position: absolute;
   top: 50%;
   left: 0%;
+  color: red !important;
 }
 
 .testimonial-slider-l-11 .l-11-slide-btn.slick-next {

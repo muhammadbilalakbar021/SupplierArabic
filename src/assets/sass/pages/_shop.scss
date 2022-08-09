@@ -911,9 +911,9 @@
 			line-height: 44px;
 			font-size: 24px;
 			z-index: 9;
-			color: $color-text;
+			color: "red";
 			&:hover {
-				color: #fff;
+				color: rgb(148, 24, 24);
 				background-color: $color-brand;
 			}
 			&.slick-prev {
@@ -934,6 +934,7 @@
 }
 .slider-nav-thumbnails .slick-prev,
 .slider-nav-thumbnails .slick-next {
+	color: red !important;
 	font-size: 12px;
 	position: absolute;
 	top: 50%;

@@ -656,9 +656,11 @@
 		button.slick-arrow {
 			&.slick-prev {
 				left: 10px;
+				color: red !important;
 			}
 			&.slick-next {
 				right: 10px;
+				color: green;
 			}
 		}		
 	}	

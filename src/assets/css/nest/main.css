@@ -5210,12 +5210,13 @@ table .product-thumbnail img {
 }
 
 .slider-nav-thumbnails button.slick-arrow:hover {
-  color: #fff;
+  /* color: #fff; */
   background-color: #3BB77E;
 }
 
 .slider-nav-thumbnails button.slick-arrow.slick-prev {
   left: -20px;
+  color: red !important;
 }
 
 .slider-nav-thumbnails button.slick-arrow.slick-next {
@@ -5228,6 +5229,7 @@ table .product-thumbnail img {
 
 .slider-nav-thumbnails .slick-prev,
 .slider-nav-thumbnails .slick-next {
+  color: red !important;
   font-size: 12px;
   position: absolute;
   top: 50%;
@@ -12258,6 +12260,8 @@ footer .hotline img {
 
   .slider-nav-thumbnails button.slick-arrow.slick-prev {
     left: 10px;
+    color: red;
+    color: red !important;
   }
 
   .slider-nav-thumbnails button.slick-arrow.slick-next {
