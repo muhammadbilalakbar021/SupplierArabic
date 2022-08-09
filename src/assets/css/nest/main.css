@@ -4196,7 +4196,6 @@ table .product-thumbnail img {
   background-color: #fff;
   overflow: hidden;
   max-height: 320px;
-  padding: 25px 25px 0 25px;
 }
 
 .product-cart-wrap .product-img-action-wrap .product-action-1 {
@@ -4208,7 +4207,7 @@ table .product-thumbnail img {
 .product-cart-wrap .product-img-action-wrap .product-img {
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
+  /* border-radius: 15px; */
 }
 
 .product-cart-wrap .product-img-action-wrap .product-img a {
