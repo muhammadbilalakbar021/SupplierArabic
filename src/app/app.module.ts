@@ -37,6 +37,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ClientComponent } from './home/client/client.component';
 import { EmailComponent } from './shared/email/email.component';
+import { InfographicsComponent } from './home/infographics/infographics.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { EmailComponent } from './shared/email/email.component';
     PhoneVerificationComponent,
     LoginComponent,
     ClientComponent,
-    EmailComponent
+    EmailComponent,
+    InfographicsComponent
   ],
   imports: [
     BrowserModule,
