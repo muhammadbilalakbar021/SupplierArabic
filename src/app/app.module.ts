@@ -38,6 +38,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ClientComponent } from './home/client/client.component';
 import { EmailComponent } from './shared/email/email.component';
 import { InfographicsComponent } from './home/infographics/infographics.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { InfographicsComponent } from './home/infographics/infographics.componen
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    MatCardModule
   ],
   exports: [
     MatFormFieldModule,

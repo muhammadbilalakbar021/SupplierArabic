@@ -1,13 +1,32 @@
 <app-navbar></app-navbar>
-<mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened class="side">
-    <mat-selection-list [multiple]="false">
-      <mat-list-option (click)="loadComponent('finance')"> Merchant Finance </mat-list-option>
-      <mat-list-option (click)="loadComponent('balances')"> Merchant Report </mat-list-option>
-    </mat-selection-list>
-  </mat-drawer>
-  <mat-drawer-content>
-    <router-outlet></router-outlet>
-  </mat-drawer-content>
-</mat-drawer-container>
+<div class=" slick ">
+  <h3 class="text-center">Products Owned By Seller</h3>
+  <div class="section-title">
+    <div class="title text-center">
+    </div>
+    <div class="slider-arrow slider-arrow-2 flex-right carausel-8-columns-arrow" id="carausel-8-columns-arrows">
+      <a (click)="prev()"><i class="fa-solid fa-arrow-left mr-30 icon"></i></a>
+      <a (click)="next()"><i class="fa-solid fa-arrow-right icon"></i></a>
+    </div>
+  </div>
+  <ngx-slick-carousel style="background-color: White" class="carousel slick-list draggable" #slickModal="slick-carousel"
+    [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)"
+    (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide card-1 slick-slide">
+      <mat-card class="example-card">
+        <mat-card-title>Bilal Akbar</mat-card-title>
+        <mat-card-subtitle>Cement</mat-card-subtitle>
+        <mat-card-content>
+          <p>Tottal Owned.</p>
+          <p>$ 2400</p>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </ngx-slick-carousel>
+</div>
+
+
+<app-finance></app-finance>
 <app-footer></app-footer>
